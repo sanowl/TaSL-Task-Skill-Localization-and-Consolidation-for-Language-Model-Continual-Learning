@@ -55,9 +55,3 @@ class TaSL:
             print(f"Training task {task_id}")
             self.train_task(task_id, dataloader, optimizer, num_epochs)
 
-# Usage example:
-# model = YourModelArchitecture()
-# tasl = TaSL(model, num_tasks=5, use_lora=True, use_adaptive_consolidation=True)
-# dataloaders = [task1_dataloader, task2_dataloader, ...]
-# optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
-# tasl.train_all_tasks(dataloaders, optimizer, num_epochs=10)
